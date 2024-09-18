@@ -1,0 +1,41 @@
+{
+    "displayName": "Belo Horizonte",
+    "blocks": [
+        {
+            "id": "aaalqdqzfn2dc",
+            "type": "input",
+            "inputType": "firehose"
+        },
+        {
+            "id": "aaalqdqzfnxew",
+            "type": "remove",
+            "subject": "item",
+            "value": "reply"
+        },
+        {
+            "id": "aaalqdqzfolr4",
+            "type": "regex",
+            "value": "Belo Horizonte",
+            "caseSensitive": true,
+            "target": "text|alt_text"
+        },
+        {
+            "type": "remove",
+            "subject": "item",
+            "value": "reply",
+            "id": "aaalqinayzsqg"
+        },
+        {
+            "type": "regex",
+            "value": "BH ",
+            "caseSensitive": false,
+            "id": "aaaamac7yg3vm"
+        },
+        {
+            "id": "aaalqdqzforo2",
+            "type": "sort",
+         "sortType": "created_at"
+        }
+    ],
+    "license": "EUPL-1.2"
+}
